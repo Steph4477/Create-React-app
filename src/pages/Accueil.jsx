@@ -1,9 +1,12 @@
-import Header from "../components/Header";
-
-
+import Header from "../components/Header"
+import Banner from "../components/Banner"
+import "../styles/main.scss"
 export default function Home() {
     return(
-       
-        <Header />
+        <body>
+            <Header />
+            <Banner />
+
+        </body>
     )
 }

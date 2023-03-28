@@ -1,18 +1,22 @@
 import { Link } from "react-router-dom"
 
+
 export default function Nav() {
     return (
-        <ul className="header__nav">
-            <li className="header__nav__onglet">
-                <Link to="/">
-                    Accueil
-                </Link>
-            </li>
-            <li className="header__nav__onglet">
-                <Link to="/about">
-                    About
-                </Link>
-            </li>
+      <nav className="header__nav">
+        <ul className="header__nav__onglets">
+          <li>
+            <Link to="/" className="header__nav__onglets__onglet">
+              Accueil
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="header__nav__onglets__onglet">
+              A Propos
+            </Link>
+          </li>
         </ul>
-    )
-}
+      </nav>
+    );
+  }
+  

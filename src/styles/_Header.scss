@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+
+    &__nav {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+
+        &__onglets {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+
+            &__onglet {
+                font-size: 24px;
+                color: #FF6060;
+                text-decoration: none;
+                margin-left: 5em;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
