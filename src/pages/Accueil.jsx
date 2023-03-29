@@ -1,12 +1,14 @@
 import Header from "../components/Header"
 import Banner from "../components/Banner"
-import "../styles/main.scss"
-export default function Home() {
+import Logements from "../components/Logements"
+
+export default function Acceuil() {
     return(
-        <body>
+        <main>
             <Header />
             <Banner />
-
-        </body>
+            <Logements />
+        </main>
+        
     )
 }
