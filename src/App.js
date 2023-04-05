@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Product from './pages/Product';
+import Product from './pages/ProductCart';
 import About from './pages/About';
 import Error from "./pages/Error";
 import Footer from './components/Footer';
