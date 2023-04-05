@@ -1,4 +1,11 @@
-@import "./main.scss";
-@import "./_Header";
-@import "./_Banner";
-@import "./Logements"
+@import "./_variables";
+@import "./_mixins";
+
+@import "./sass/main.scss";
+@import "./sass/_Header";
+@import "./sass/_Banner";
+@import "./sass/_ProductsList";
+@import "./sass/_Product";
+@import "./sass/_Collapse";
+@import "./sass/Footer";
+@import "./sass/_Logo";

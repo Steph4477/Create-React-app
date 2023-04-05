@@ -1,10 +1,10 @@
-import BannerImage from "../assets/banner.png"
 
-export default function Banner() {
+export default function Banner({image, showText}) {
     return (
+        
         <article className="article">
-            <img className="article__banner-image" src={BannerImage} alt="Photographie avec un slogan écrit au centre" />
-            <h2 className="article__banner-text" alt="Texte à insérer dans l'image">Texte à insérer dans l'image</h2>
+            <img className="article_banner-image" src={image} alt="Photographie avec un slogan écrit au centre" />
+            {showText && <h1 className="article_banner-text" alt="Texte à insérer dans l'image">Chez vous, partout et ailleurs</h1>}
         </article>
     )
 }

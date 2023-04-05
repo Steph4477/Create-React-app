@@ -1,0 +1,121 @@
+.container {
+
+    &_carousel {
+        margin-top: 5vh;
+        height: 450px;
+        overflow: hidden;
+        border-radius: 25px;
+
+        img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+    }
+
+    &_identity {
+        display: flex;
+        margin-top: 5vh;
+
+        &_item {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+            &_title {
+                width: 85%;
+                display: flex;
+                flex-wrap: wrap;
+                color: $pink;
+                
+                &_h1 {
+                    letter-spacing: 5px;
+                    width: 100%;
+                    font-size: 36px;
+                }
+
+                &_address {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                }
+            }
+
+            &_profil {
+                display: flex;
+                width: 15%;
+                justify-content: space-between;
+                align-items: center;
+
+                &_name {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 22px;
+                    color: $pink;
+                    width: 15%;
+
+                }
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    &-TR {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &_tags {
+            width: 40%;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: flex-start;
+
+            &_item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20%;
+                background-color: $pink;
+                color: $white;
+                font-size: 14px;
+                margin-right: 1vh;
+                padding: 1%;
+                border-radius: 15px;
+            }
+        }
+
+        &_rates {
+            margin-top: 5vh;
+            align-items: center;
+
+            &-src {
+                width: 100%;
+                object-fit: cover;
+
+            }
+        }
+    }
+
+    &_collapse {
+        margin-top: 5vh;
+        display: flex;
+        justify-content: space-between;
+
+        &_item {
+            width: calc(50% - 10px);
+        }
+    }
+
+    &_footer {
+        background-color: $black;
+    }
+}

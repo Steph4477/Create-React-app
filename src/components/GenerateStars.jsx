@@ -1,0 +1,19 @@
+
+import starPink from "../assets/Stars.svg"
+import starGray from "../assets/Stars_empty.svg"
+
+export default function GenerateStars(rating) {
+  const stars = []
+  for (let i = 0; i < 5; i++) {
+    const dataItem = i < rating ? starPink : starGray
+    stars.push(
+      <img
+        src={dataItem}
+        className="container-TR_rates_icone"
+        alt="icone étoile"
+        title="icone étoile"
+      />
+    )
+  }
+  return stars
+}

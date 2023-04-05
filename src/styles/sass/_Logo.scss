@@ -1,0 +1,42 @@
+.logo {
+  
+  &_spinner {
+    display: flex;
+   
+    &_letter {
+      display: flex;
+      width: 100%;
+      
+      
+      &_k {
+        animation: spin 2s linear;
+        animation-delay: 0ms;
+      }
+
+      &_maison {
+        animation: spin 5s linear;
+        animation-delay: 400ms;
+      }
+
+      &_s {
+        animation: spin 2s linear;
+        animation-delay: 800ms;
+      }
+
+      &_a {
+        animation: spin 2s linear; 
+        animation-delay: 1200ms;
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

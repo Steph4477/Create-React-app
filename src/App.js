@@ -1,23 +1,40 @@
-import './styles/Index.scss';
-import { Routes, Route } from "react-router-dom";
+import './styles/index.scss'
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Product from './pages/Product';
 import About from './pages/About';
-import Accueil from "./pages/Accueil";
 import Error from "./pages/Error";
-import LogementCart from "./pages/LogementCart";
+import Footer from './components/Footer';
 
 export default function App() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {  
+    fetch('/logements.json')
+      .then(response => {
+        console.log('Response received')
+        return response.json()
+      })
+      .then(jsonData => {
+        console.log('Data received')
+        setData(jsonData)
+      })
+      .catch(error => console.error('Erreur : ', error))    
+  }, []);
+
   return (
     <div className="App">
-        <Routes>
-          <Route path="/" element={<Accueil />} />
-          <Route path="/about" element={<><Header/><About /></>} />
-          <Route path="/logement/:id" element={<><Header /><LogementCart /></>} />
-          <Route path="/error" element={<><Header /><Error /></>} />
-        </Routes>
-    </div> 
-  )
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home data={data} />} />
+        <Route path="/product/:id" element={<Product data={data}/>}  />
+        <Route path="/about" element={<About />} />
+        <Route path="/error" element={<Error />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
 }
-
-
 

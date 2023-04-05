@@ -1,9 +1,10 @@
-import ErrorMessage from "../components/ErrorMessage"
+import ErrorComp from "../components/Error"
 
 export default function Error() {
 
     return (
-
-        <ErrorMessage />
+        <main>
+            <ErrorComp />
+        </main>
     )
 }
