@@ -1,5 +1,5 @@
-<span style="font-size: 36px"> Kasa - Plateforme de location d'appartements entre particuliers </span>
-<span style="font-size: 28px;">Kasa est une entreprise de location d'appartements entre particuliers en France qui propose une plateforme web de qualité pour faciliter les transactions locatives. La stack utilisée pour cette plateforme web est JavaScript avec NodeJS côté back-end et React côté front-end. Le projet est prêt à être lancé en suivant les instructions suivantes :</span>
+# Kasa - Plateforme de location d'appartements entre particuliers </span>
+Kasa est une entreprise de location d'appartements entre particuliers en France qui propose une plateforme web de qualité pour faciliter les transactions locatives. La stack utilisée pour cette plateforme web est JavaScript avec NodeJS côté back-end et React côté front-end. Le projet est prêt à être lancé en suivant les instructions suivantes :</span>
 
 ## Instructions pour l'installation et le lancement du projet
 - Clonez le repository GitHub de Kasa.
@@ -7,10 +7,11 @@
 - Lancez le serveur en exécutant la commande npm start.
 - Accédez à l'application à l'adresse http://localhost:3000 dans votre navigateur.
 - Directives pour le développement
+
 ### Maquettes
 Le designer de Kasa a fourni les maquettes pour le design d'interface sur Figma, et elles ont été utilisées pour le développement de la plateforme web. Toutes les ressources nécessaires (logo, icônes pour les composants, etc.) sont disponibles dans les maquettes.
 
-### Informations et contraintes fonctionnelles
+#### Informations et contraintes fonctionnelles
 La CTO de Kasa a fourni les directives pour le développement de la nouvelle plateforme web. Les développements ont été effectués en suivant les maquettes Figma et les informations suivantes :
 
 Coding guidelines de Kasa
