@@ -1,4 +1,13 @@
-Mon application React
+## Styling
+
+To style the project, you can use the included `style.scss` file. Here's how to include it:
+
+1. Copy the `style.scss` file into your project's directory.
+2. In the `<head>` section of your HTML file, add the following line to include the CSS:
+
+```html
+
+**Styling**
 Mon application React est une application pour faire X. Elle est construite avec React et utilise les dernières fonctionnalités de JavaScript.
 
 Exigences du système
