@@ -1,11 +1,11 @@
 import './styles/index.scss'
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 import Product from './pages/ProductCart';
 import About from './pages/About';
-import Error from "./pages/Error";
+import Error from './pages/Error';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -22,19 +22,19 @@ export default function App() {
         setData(jsonData)
       })
       .catch(error => console.error('Erreur : ', error))    
-  }, []);
+  }, [])
 
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
       <Routes>
-        <Route path="/" element={<Home data={data} />} />
-        <Route path="/product/:id" element={<Product data={data}/>}  />
-        <Route path="/about" element={<About />} />
-        <Route path="/error" element={<Error />} />
+        <Route path='/' element={<Home data={data} />} />
+        <Route path='/product/:id' element={<Product data={data}/>}  />
+        <Route path='/about' element={<About />} />
+        <Route path='/error' element={<Error />} />
       </Routes>
       <Footer />
     </div>
-  );
+  )
 }
 

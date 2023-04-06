@@ -6,7 +6,6 @@
   font-weight: 500;
   margin: 0;
   padding: 0;
-  
 }
 
 body {
@@ -15,17 +14,20 @@ body {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 40px;
   margin: 0;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 22px;
 }
 
 p {
-  margin-top: 1vh;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
 } 
 
@@ -34,4 +36,15 @@ address {
   font-style: normal;
   margin-top: 1vh;
   color: $pink;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+li {
+  font-size: 22px;
+  line-height: 4vh;
+  list-style-type: none;
 }

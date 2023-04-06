@@ -1,18 +1,5 @@
 .container {
 
-    &_carousel {
-        margin-top: 5vh;
-        height: 450px;
-        overflow: hidden;
-        border-radius: 25px;
-
-        img {
-            width: 100%;
-            height: 450px;
-            object-fit: cover;
-        }
-    }
-
     &_identity {
         display: flex;
         margin-top: 5vh;
@@ -31,13 +18,14 @@
                 &_h1 {
                     letter-spacing: 5px;
                     width: 100%;
-                    font-size: 36px;
+                    font-size: 40px;
+                    
                 }
 
                 &_address {
                     width: 100%;
                     margin-bottom: 10px;
-                    font-size: 18px;
+                    font-size: 25px;
                 }
             }
 
@@ -74,7 +62,7 @@
         width: 100%;
 
         &_tags {
-            width: 40%;
+            width: 60%;
             margin-top: 5vh;
             display: flex;
             justify-content: flex-start;
@@ -88,7 +76,7 @@
                 color: $white;
                 font-size: 14px;
                 margin-right: 1vh;
-                padding: 1%;
+                padding: 1vh;
                 border-radius: 15px;
             }
         }
