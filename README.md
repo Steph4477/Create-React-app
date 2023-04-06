@@ -1,4 +1,4 @@
-<span style="font-size: 36px;"># **Kasa** - Plateforme de location d'appartements entre particuliers </span>
+<span style="font-size: 36px"> Kasa - Plateforme de location d'appartements entre particuliers </span>
 <span style="font-size: 28px;">Kasa est une entreprise de location d'appartements entre particuliers en France qui propose une plateforme web de qualité pour faciliter les transactions locatives. La stack utilisée pour cette plateforme web est JavaScript avec NodeJS côté back-end et React côté front-end. Le projet est prêt à être lancé en suivant les instructions suivantes :</span>
 
 ## Instructions pour l'installation et le lancement du projet
