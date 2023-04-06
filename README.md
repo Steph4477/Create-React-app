@@ -1,45 +1,27 @@
-## Styling
+# Kasa - Plateforme de location d'appartements entre particuliers ;
 
-To style the project, you can use the included `style.scss` file. Here's how to include it:
+Kasa est une entreprise de location d'appartements entre particuliers en France qui a lancé une refonte de son site web. Nous recherchons un développeur front-end freelance pour nous aider à développer notre nouvelle plateforme web. Cette mission est l'occasion idéale pour ajouter une belle référence à votre portfolio de freelance !
+## Stack utilisée :
 
-1. Copy the `style.scss` file into your project's directory.
-2. In the `<head>` section of your HTML file, add the following line to include the CSS:
+La stack que nous avons choisie pour le développement de notre nouvelle plateforme web est JavaScript avec NodeJS côté back-end et React côté front-end.
+## Instructions pour l'installation et le lancement du projet
 
-```html
+- Clonez le repository GitHub de Kasa.
+- Installez les dépendances en exécutant la commande npm install.
+- Lancez le serveur en exécutant la commande npm start.
+- Accédez à l'application à l'adresse http://localhost:3000 dans votre navigateur.
+## Directives pour le développement
+### Maquettes
 
-**Styling**
-Mon application React est une application pour faire X. Elle est construite avec React et utilise les dernières fonctionnalités de JavaScript.
+Le designer de Kasa a fourni les maquettes pour le design d'interface sur Figma. Nous travaillons avec la logique de composants sur Figma, ce qui facilitera votre travail sur React. Toutes les ressources nécessaires (logo, icônes pour les composants, etc.) sont disponibles dans les maquettes. Il suffit de cliquer sur la ressource souhaitée et de faire "Exporter" au format voulu.
+### Informations et contraintes fonctionnelles
 
-Exigences du système
-Node.js v14.15.0 ou supérieur
-Navigateur Web moderne (Chrome, Firefox, Safari)
-Installation
-Pour installer l'application, exécutez simplement la commande suivante:
+La CTO de Kasa a fourni les directives pour le développement de la nouvelle plateforme web. Votre mission consiste à développer l'ensemble de l'application en suivant les maquettes Figma et les informations suivantes :
 
-Copy code
-npm install
-Pour lancer l'application, exécutez la commande suivante:
+Coding guidelines de Kasa
+Les coding guidelines de Kasa sont disponibles ici. Veuillez les respecter pour un code de qualité.
 
-sql
-Copy code
-npm start
-Fonctionnalités
-Fonctionnalité 1
-Fonctionnalité 2
-Fonctionnalité 3
-Utilisation
-Pour utiliser l'application, suivez les étapes suivantes:
+Contraintes pour la galerie d'images
+Pour le défilement des photos dans la galerie (composant Gallery) :
 
-Étape 1
-Étape 2
-Étape 3
-Contribution
-Si vous souhaitez contribuer à ce projet, veuillez suivre ces étapes:
-
-Clonez le projet sur votre ordinateur local.
-Installez toutes les dépendances avec npm install.
-Créez une nouvelle branche à partir de la branche main.
-Faites vos modifications et testez-les.
-Envoyez une demande de tirage en expliquant les modifications que vous avez apportées.
-Licence
-Ce projet est sous licence MIT. Veuillez consulter le fichier LICENSE pour plus d'informations.
+Si l'utilisateur se trouve à la première image et qu'il clique sur "Image précédente", la galerie affiche la dernière
