@@ -1,21 +1,26 @@
+import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import Collapse from '../components/Collapse';
-import TagsRate from '../components/TagsRate';
+import Tags from '../components/Tags';
+import Rate from '../components/Rate';
 import Carousel from '../components/Carousel';
 
 export default function ProductCart ({data}) {
+  const navigate = useNavigate();
   const { id } = useParams()
   const item = data.find((item) => item.id === id)
 
   if (!item) {
-    return <div>Produit non trouvé</div>
+    return (
+      navigate('/404')
+    )
   }
 
   return (
     
     <main className='container'>
 
-      <Carousel data={data} />
+      <Carousel item={item} />
       
       <section className='container_identity'>
         
@@ -43,8 +48,10 @@ export default function ProductCart ({data}) {
         </div>
 
       </section>
-
-      <TagsRate data={data} />
+      <section className='container-TR'>
+        <Tags item={item} />
+       <Rate item={item} />
+      </section>
 
       <section className='container_collapse'>
         

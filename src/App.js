@@ -14,11 +14,9 @@ export default function App() {
   useEffect(() => {  
     fetch('/logements.json')
       .then(response => {
-        console.log('Response received')
         return response.json()
       })
       .then(jsonData => {
-        console.log('Data received')
         setData(jsonData)
       })
       .catch(error => console.error('Erreur : ', error))    
@@ -29,9 +27,9 @@ export default function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home data={data} />} />
-        <Route path='/product/:id' element={<Product data={data}/>}  />
+        <Route path='/product/:id' element={<Product data={data}/>} />
         <Route path='/about' element={<About />} />
-        <Route path='/error' element={<Error />} />
+        <Route path='*' element={<Error />} />
       </Routes>
       <Footer />
     </div>

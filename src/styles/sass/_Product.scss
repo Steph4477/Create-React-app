@@ -31,12 +31,13 @@
 
             &_profil {
                 display: flex;
-                width: 15%;
+                min-width: 15%;
+                max-width: 15%;
                 justify-content: space-between;
                 align-items: center;
 
                 &_name {
-                    width: 100%;
+                   
                     display: flex;
                     flex-wrap: wrap;
                     font-size: 22px;
@@ -59,37 +60,36 @@
     &-TR {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        margin-top: 5vh;
+       
 
         &_tags {
-            width: 60%;
-            margin-top: 5vh;
+            width: 70%;
             display: flex;
-            justify-content: flex-start;
 
             &_item {
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                width: 20%;
+                height: 35px;
                 background-color: $pink;
                 color: $white;
                 font-size: 14px;
                 margin-right: 1vh;
-                padding: 1vh;
+                padding: 0px 35px 0px 35px;
                 border-radius: 15px;
             }
         }
 
-        &_rates {
-            margin-top: 5vh;
-            align-items: center;
-
-            &-src {
-                width: 100%;
-                object-fit: cover;
-
+        &_rate {
+            width: 15%;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            img {
+                width: 30px;
             }
+
+            
         }
     }
 
