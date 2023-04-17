@@ -12,7 +12,7 @@ export default function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {  
-    fetch('/logements.json')
+    fetch('./logements.json')
       .then(response => {
         return response.json()
       })

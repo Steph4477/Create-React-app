@@ -10,7 +10,7 @@ export default function Carousel({ item }) {
     function imageNext() {
         setIndex((index) =>
             index === item.pictures.length - 1 ? 0 : index + 1
-        )
+        );
     }
 
     function imageAfter() {

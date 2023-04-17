@@ -6,7 +6,7 @@ import Rate from '../components/Rate';
 import Carousel from '../components/Carousel';
 
 export default function ProductCart ({data}) {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   const { id } = useParams()
   const item = data.find((item) => item.id === id)
 
@@ -50,7 +50,8 @@ export default function ProductCart ({data}) {
       </section>
       <section className='container-TR'>
         <Tags item={item} />
-       <Rate item={item} />
+        
+        <Rate item={item} />
       </section>
 
       <section className='container_collapse'>

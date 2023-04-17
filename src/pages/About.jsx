@@ -1,38 +1,35 @@
-import Banner from '../components/Banner'
-import bannerImage from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png'
-import Collapse from '../components/Collapse'
-const comment = "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+import React, { useState, useEffect } from 'react';
+import Banner from '../components/Banner';
+import bannerImage from '../assets/about.png';
+import Collapse from '../components/Collapse';
 
 export default function About() {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch('./about.json')
+            .then(response => response.json())
+            .then(jsonData => setData(jsonData))
+            .catch(error => console.error('Erreur : ', error))
+    }, []);
 
     return (
-
         <main>
 
-            <div className='about_banner'>
-                <Banner image={bannerImage} showText={false} />
-            </div>
+            <Banner image={bannerImage} showText={false} />
+           
+            <section className='about'>
+            {data.map(item => (
+                <div className='about_collapse' key={item.id}>
 
-            <div className='about_collapse'>
+                   
+                        <Collapse title={item.title} content={item.content} />
+                    
 
-                <div className='about_collapse-1'>
-                    <Collapse title='Fiabilité' content={comment} />
                 </div>
-
-                <div className='about_collapse-2'>
-                    <Collapse title='Respect' content={comment} />
-                </div>
-
-                <div className='about_collapse-3'>
-                    <Collapse title='Service' content={comment} />
-                </div>
-
-                <div className='about_collapse-4'>
-                    <Collapse title='Sécurité' content={comment} />
-                </div>
-
-            </div>
+            ))}
+            </section>
 
         </main>
-    )
+    );
 }

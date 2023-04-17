@@ -1,0 +1,13 @@
+.about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+    &_collapse {
+        width: 90%;
+        margin-top: 5vh;
+
+    }
+}
