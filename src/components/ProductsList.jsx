@@ -1,19 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import noPictures from '../assets/no_pictures.png';
 
 export default function ProductList({ data }) {
-  
+
   return (
-    
+
     <div className='products'>
       {data.map(item => (
-        
+
         <div className='products_product' key={item.id}>
           <Link to={`/product/${item.id}`}>
-            
+
             <div className='products_product_image'>
-              <img src={item.cover} alt='Photographie du logement' />
-              
+              <img src={item.cover ? item.cover : noPictures} alt='Photographie du logement' />
+
               <div className='products_product_image_titre'>
                 <h2>{item.title}</h2>
               </div>
@@ -21,13 +22,12 @@ export default function ProductList({ data }) {
             </div>
 
           </Link>
-        </div> 
-             
+        </div>
+
       ))}
-    </div>    
+    </div>
   )
 }
-
 
 
 
