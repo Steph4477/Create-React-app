@@ -12,7 +12,7 @@ export default function ProductCart ({data}) {
 
   if (!item) {
     return (
-      navigate('/404')
+      navigate('./404')
     )
   }
 

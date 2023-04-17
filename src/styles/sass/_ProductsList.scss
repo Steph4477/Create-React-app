@@ -6,16 +6,28 @@
   margin-top: 5vh;
   border-radius: 25px;
   padding: 4vh;
+  @include for-tablet{
+   padding: 0;
+  }
 
   &_product {
     width: 33.33%;
     padding: 4vh;
+    @include for-tablet{
+      width: 100%;
+      padding: 0 0 5vh 0;
+      
+    }
 
     &_image {
       height: 350px;
       background-color: #ccc;
       position: relative;
       border-radius: 10px;
+      @include for-tablet{
+        height: 300px;
+        
+      }
 
       img {
         width: 100%;

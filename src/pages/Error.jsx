@@ -13,9 +13,8 @@ export default function Error() {
                 Oups! La page que vous demandez n'existe pas.
             </div>
             
-            <Link className="error_linkHome"
-                to="/"
-               >Retour à la page d'accueil
+            <Link className="error_linkHome" to="/">
+                Retour à la page d'accueil
             </Link>
 
         </section>

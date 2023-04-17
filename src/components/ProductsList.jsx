@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import noPictures from '../assets/no_pictures.png';
 
-export default function ProductList({ data }) {
+export default function Product({ data }) {
 
   return (
 
@@ -16,7 +16,7 @@ export default function ProductList({ data }) {
               <img src={item.cover ? item.cover : noPictures} alt='Photographie du logement' />
 
               <div className='products_product_image_titre'>
-                <h2>{item.title}</h2>
+                <h3>{item.title}</h3>
               </div>
 
             </div>

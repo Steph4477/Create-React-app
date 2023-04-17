@@ -3,6 +3,10 @@
     height: 300px;
     margin-top: 5vh;
 
+    @include for-tablet{
+        height: 200px
+    }
+
     &_banner-image {
        
         max-height: 100%;
@@ -19,6 +23,9 @@
         left: 50%;
         transform: translate(-50%);
         color: $white;
-        
+        @include for-tablet{
+            text-align: left;
+            width: 70%;
+        }
     }
 }

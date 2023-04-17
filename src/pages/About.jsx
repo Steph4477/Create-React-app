@@ -17,17 +17,17 @@ export default function About() {
         <main>
 
             <Banner image={bannerImage} showText={false} />
-           
+
             <section className='about'>
-            {data.map(item => (
-                <div className='about_collapse' key={item.id}>
+                {data.map(item => (
+                    <div className='about_collapse' key={item.id}>
 
-                   
+
                         <Collapse title={item.title} content={item.content} />
-                    
 
-                </div>
-            ))}
+
+                    </div>
+                ))}
             </section>
 
         </main>
