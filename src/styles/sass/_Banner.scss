@@ -1,10 +1,13 @@
 .article {
     position: relative;
-    height: 300px;
+    height: 250px;
     margin-top: 5vh;
 
     @include for-tablet{
         height: 200px
+    }
+    @include for-mobile{
+        height: 150px
     }
 
     &_banner-image {
@@ -26,6 +29,10 @@
         @include for-tablet{
             text-align: left;
             width: 70%;
+        }
+        @include for-mobile{
+            height: 150px;
+            top: 25%;
         }
     }
 }

@@ -30,12 +30,15 @@ export default function Carousel({ item }) {
             <div className="carousel_item">
                 <div className="carousel_item_picture">
                     <img src={item.pictures[index]} key={index} alt="Photographie du logement" />
-
-                    <div className="image-overlay">
-                        {`${index + 1}/${item.pictures.length}`}
-                    </div>
-
-                    {item.pictures.length > 1 && (
+                    
+                    {item.pictures.length > 1 &&  ( //Display the counter only if there is more than one image.
+                        
+                        <div className="image-overlay">
+                            {`${index + 1}/${item.pictures.length}`}
+                        </div>
+                    )}
+                    
+                    {item.pictures.length > 1 && ( //Display the arrows only if there is more than one image.
                         <div>
 
                             <button className="carousel_item_picture_button_G" onClick={imageAfter}>

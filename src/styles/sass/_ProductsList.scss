@@ -28,6 +28,10 @@
         height: 300px;
         
       }
+      @include for-mobile{
+        height: 250px;
+        
+      }
 
       img {
         width: 100%;

@@ -6,6 +6,7 @@
         width: 100%;
         @include for-tablet{
             flex-wrap: wrap;
+            margin-top: 2vh;
         }
         &_item {
             display: flex;
@@ -34,7 +35,7 @@
 
                 &_address {
                     width: 100%;
-                    margin-bottom: 10px;
+                    
                 }
             }
 
@@ -47,6 +48,7 @@
 
                 @include for-tablet {
                     flex-wrap: wrap;
+                    margin-top: 2vh;
                     
                 }
 
@@ -81,22 +83,23 @@
                 width: 100%;
                 flex-direction: row-reverse;
                 flex-wrap: nowrap;
+                height: 80px;
                 
             }
 
             &_name {
                 display: flex;
-                flex-wrap: wrap;
                 align-items: center;
                 color: $pink;
-                
-
+                justify-content: flex-end;
+                @include for-tablet{
+                    align-items: normal;
+                }
                 &_N {
-                    width: 50%;          
                     display: flex;
                     flex-wrap: wrap;
-                    align-items: center;
-                   
+                    
+                    
                     
                 }
 
@@ -106,15 +109,18 @@
                     
                     
                     img {
-                        width: 100px;
+                        width: 80px;
+                        height: 80px;
                         object-fit: cover;
                         border-radius: 50%;
                         @include for-tablet {
-                            width: 80px;
+                            width: 70px;
+                            height: 70px;
                         }
                         @include for-mobile {
                             width: 60px;
-                            margin-left: 2px;
+                            height: 60px;
+                           
                         }
                     }
                 }
@@ -130,6 +136,7 @@
                     width: 23px;
                     @include for-tablet{
                         width: 22px;
+                        margin-right: 5px;
                     }
                     @include for-tablet{
                         width: 20px;
@@ -138,7 +145,8 @@
                     
                 }
                 @include for-tablet{
-                    width: 70%;
+                    margin-top: 0;
+                    align-items: center;
                     justify-content: flex-start;
                 }
                 
@@ -152,8 +160,17 @@
         display: flex;
         justify-content: space-between;
 
+        @include for-tablet {
+            width: 100%;
+            margin-top: 0vh;
+            flex-wrap: wrap;
+        }
         &_item {
             width: calc(50% - 10px);
+            @include for-tablet{
+                width: 100%;
+                margin-top: 2vh;
+            }
         }
     }
 
