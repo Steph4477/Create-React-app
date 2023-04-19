@@ -11,9 +11,9 @@ export default function Tags({ item }) {
 
     return (
 
-        <div className='container-TR_tags'>
+        <div className='container_identity_item-tag'>
             {item.tags && item.tags.map((tag, index) => (
-                <div className='container-TR_tags_item' key={index} >
+                <div className='container_identity_item-tag_item' key={index} >
                     <p>{tag}</p>
                 </div>
             ))}

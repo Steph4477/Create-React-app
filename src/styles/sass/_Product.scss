@@ -1,23 +1,29 @@
 .container {
-    @include for-tablet {
-        position: relative;
-    }
 
     &_identity {
         display: flex;
         margin-top: 5vh;
-
+        width: 100%;
+        @include for-tablet{
+            flex-wrap: wrap;
+        }
         &_item {
             display: flex;
             flex-wrap: wrap;
-            width: 100%;
+           
+            width: 80%;
+            @include for-tablet{
+                
+                width: 100%;
+
+            }
 
             &_title {
-                width: 85%;
                 display: flex;
                 flex-wrap: wrap;
                 color: $pink;
-                @include for-tablet{
+
+                @include for-tablet {
                     width: 100%;
                 }
 
@@ -32,89 +38,113 @@
                 }
             }
 
-            &_profil {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                &_name {
-
-                    display: flex;
-                    flex-wrap: wrap;
-                    font-size: 22px;
-                    color: $pink;
-                    width: 15%;
-
-
-                }
-
-                img {
-                    width: 100px;
-                    height: 100px;
-                    object-fit: cover;
-                    border-radius: 50%;
-                    margin-right: 10px;
-                }
-            }
-        }
-    }
-
-    &-TR {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 5vh;
-        width: 100%;
-        @include for-tablet{
-            flex-wrap: wrap;
-        }
-
-
-        &_tags {
-            width: 70%;
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            @include for-tablet{
-                width: 100%;
-            }
-
-            &_item {
+            &-tag {
+                margin-top: 5vh;
                 display: flex;
                 flex-wrap: nowrap;
+
                 align-items: center;
-                height: 35px;
-                background-color: $pink;
-                color: $white;
-                font-size: 14px;
-                margin-right: 1vh;
-                padding: 0px 35px 0px 35px;
-                border-radius: 15px;
-                @include for-tablet{
-                    width: 100%;
+
+                @include for-tablet {
+                    flex-wrap: wrap;
                     
                 }
+
+                &_item {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 1vh;
+                    background-color: $pink;
+                    color: $white;
+                    padding: 0px 35px 0px 35px;
+                    border-radius: 15px;
+                    height: 35px;
+
+                    @include for-tablet {
+                       margin-top: 1vh;
+                      
+                       
+                   }
+
+                }
+
             }
         }
 
-        &_rate {
-            width: 15%;
-            font-size: 20px;
+        &_profil {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            width: 20%;
             @include for-tablet{
-               margin-top: 5vh;
-            }
-
-            img {
-                width: 30px;
-            }
-
-            &-src {
+                margin-top: 2vh;
                 width: 100%;
-                object-fit: cover;
+                flex-direction: row-reverse;
+                flex-wrap: nowrap;
+                
+            }
 
+            &_name {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                color: $pink;
+                
+
+                &_N {
+                    width: 50%;          
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                   
+                    
+                }
+
+                &_I {
+                    display: flex;
+                   width: 50%;  
+                    
+                    
+                    img {
+                        width: 100px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        @include for-tablet {
+                            width: 80px;
+                        }
+                        @include for-mobile {
+                            width: 60px;
+                            margin-left: 2px;
+                        }
+                    }
+                }
+            }
+
+            &-rate {
+                margin-top: 5vh;
+                display: flex;
+                justify-content: flex-end;
+                color: $pink;
+                width: 80%;
+                img{
+                    width: 23px;
+                    @include for-tablet{
+                        width: 22px;
+                    }
+                    @include for-tablet{
+                        width: 20px;
+                       
+                    }
+                    
+                }
+                @include for-tablet{
+                    width: 70%;
+                    justify-content: flex-start;
+                }
+                
             }
         }
+
     }
 
     &_collapse {

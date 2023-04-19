@@ -11,6 +11,10 @@
 body {
   margin: 3%;
   background-color: $white;
+  @include for-tablet{
+    margin: 2%;
+  }
+  
   
 }
 
@@ -20,12 +24,18 @@ h1 {
   @include for-tablet{
     font-size: 30px;
   }
+  @include for-mobile{
+    font-size: 25px;
+  }
 }
 
 h2 {
   font-size: 30px;
   @include for-tablet{
     font-size: 20px;
+  }
+  @include for-mobile{
+    font-size: 15px;
   }
 }
 
@@ -34,11 +44,20 @@ h3 {
   @include for-tablet{
     font-size: 18px;
   }
+  @include for-mobile{
+    font-size: 16px;
+  }
 }
 
 p {
   font-size: 18px;
   font-weight: 400;
+  @include for-tablet{
+    font-size: 16px;
+  }
+  @include for-mobile{
+    font-size: 14px;
+  }
 } 
 
 address {
@@ -46,6 +65,12 @@ address {
   font-style: normal;
   margin-top: 1vh;
   color: $pink;
+  @include for-tablet{
+    font-size: 20px;
+  }
+  @include for-mobile{
+    font-size: 18px;
+  }
 }
 
 button {
@@ -54,7 +79,13 @@ button {
 }
 
 li {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 4vh;
   list-style-type: none;
+  @include for-tablet{
+    font-size: 16px;
+  }
+  @include for-mobile{
+    font-size: 14px;
+  }
 }

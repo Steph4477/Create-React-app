@@ -4,3 +4,9 @@
     }
 }
 
+@mixin for-mobile {
+    @media (max-width: 570px) {
+        @content;
+    }
+}
+

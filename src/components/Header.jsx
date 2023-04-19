@@ -8,20 +8,20 @@ export default function Header() {
         <header className='header'>
             
             <Link to='/'>
-                <img className='header__logo' src={Logo} alt="logo de l'agence Kasa" />
+                <img className='header_logo' src={Logo} alt="logo de l'agence Kasa" />
             </Link>
 
-            <nav className='header__nav'>
-                <ul className='header__nav__onglets'>
+            <nav className='header_nav'>
+                <ul className='header_nav_onglets'>
 
                     <li>
-                        <Link to='/' className='header__nav__onglets__onglet'>
+                        <Link to='/' className='header_nav_onglets_onglet'>
                             Accueil
                         </Link>
                     </li>
 
                     <li>
-                        <Link to='/about' className='header__nav__onglets__onglet'>
+                        <Link to='/about' className='header_nav_onglets_onglet'>
                             A Propos
                         </Link>
                     </li>
