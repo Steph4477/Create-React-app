@@ -2,6 +2,10 @@
     margin-top: 5vh;
     border-radius: 25px;
 
+    @include for-tablet {
+        margin-top: 2vh;
+    }
+
     &_item {
         overflow: hidden;
         border-radius: 25px;
@@ -10,10 +14,12 @@
             position: relative;
             width: 100%;
             height: 500px;
-            @include for-tablet{
+
+            @include for-tablet {
                 height: 400px;
             }
-            @include for-mobile{
+
+            @include for-mobile {
                 height: 300px;
             }
 
@@ -22,53 +28,55 @@
                 width: 100%;
                 object-fit: cover;
             }
-           
+
             &_button_G {
                 position: absolute;
                 top: 45%;
                 left: 2%;
                 rotate: 180deg;
+
                 img {
                     width: 90%;
+
                     @include for-tablet {
                         width: 70%;
                     }
+
                     @include for-mobile {
                         width: 50%;
                     }
-
-
                 }
-                
+
                 :hover {
-                    filter: brightness(0.8);            
+                    filter: brightness(0.8);
                 }
-                
             }
 
             &_button_D {
                 position: absolute;
                 top: 45%;
                 right: 2%;
+
                 img {
                     width: 90%;
+
                     @include for-tablet {
                         width: 70%;
                     }
+
                     @include for-mobile {
                         width: 50%;
                     }
-
-
                 }
+
                 :hover {
-                    filter: brightness(0.8);            
+                    filter: brightness(0.8);
                 }
-                
             }
         }
     }
 }
+
 .image-overlay {
     position: absolute;
     top: 90%;
@@ -76,10 +84,12 @@
     transform: translate(-50%, -50%);
     color: white;
     font-size: 40px;
-    @include for-tablet{
+
+    @include for-tablet {
         font-size: 30px;
     }
-    @include for-mobile{
+
+    @include for-mobile {
         font-size: 25px;
     }
 }

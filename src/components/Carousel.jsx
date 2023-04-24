@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import arrow from '../assets/arrowCaroselPng.png';
+import arrow from '../assets/arrowCarousel.png';
 import { useState } from 'react';
 
 export default function Carousel({ item }) {
@@ -10,7 +10,7 @@ export default function Carousel({ item }) {
     function imageNext() {
         setIndex((index) =>
             index === item.pictures.length - 1 ? 0 : index + 1
-        );
+        )
     }
 
     function imageAfter() {

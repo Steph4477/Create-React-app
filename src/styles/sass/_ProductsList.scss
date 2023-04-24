@@ -6,17 +6,19 @@
   margin-top: 5vh;
   border-radius: 25px;
   padding: 4vh;
-  @include for-tablet{
-   padding: 0;
+
+  @include for-tablet {
+    padding: 0;
   }
 
   &_product {
     width: 33.33%;
     padding: 4vh;
-    @include for-tablet{
+
+    @include for-tablet {
       width: 100%;
       padding: 0 0 5vh 0;
-      
+
     }
 
     &_image {
@@ -24,13 +26,15 @@
       background-color: #ccc;
       position: relative;
       border-radius: 10px;
-      @include for-tablet{
+
+      @include for-tablet {
         height: 300px;
-        
+
       }
-      @include for-mobile{
+
+      @include for-mobile {
         height: 250px;
-        
+
       }
 
       img {
@@ -41,8 +45,7 @@
       }
 
       &_titre {
-        width: 70%;
-        font-size: 14px;
+        width: 80%;
         padding: 1vh;
         color: #fff;
         position: absolute;

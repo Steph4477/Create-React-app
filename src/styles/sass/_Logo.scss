@@ -1,13 +1,13 @@
 .logo {
-  
+
   &_spinner {
     display: flex;
-   
+
     &_letter {
       display: flex;
       width: 100%;
-      
-      
+
+
       &_k {
         animation: spin 2s linear;
         animation-delay: 0ms;
@@ -24,7 +24,7 @@
       }
 
       &_a {
-        animation: spin 2s linear; 
+        animation: spin 2s linear;
         animation-delay: 1200ms;
       }
     }

@@ -16,7 +16,7 @@ export default function Product({ data }) {
               <img src={item.cover ? item.cover : noPictures} alt='Photographie du logement' />
 
               <div className='products_product_image_titre'>
-                <h3>{item.title}</h3>
+                <h4>{item.title}</h4>
               </div>
 
             </div>

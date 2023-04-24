@@ -7,13 +7,12 @@
         }
     }
 
-
     &_nav {
         display: flex;
         justify-content: flex-end;
         width: 100%;
 
-        @include for-tablet {
+        @include for-mobile {
             width: 80%;
             text-transform: uppercase;
         }
@@ -24,17 +23,16 @@
             align-items: center;
 
             &_onglet {
-                font-size: 24px;
                 color: $pink;
                 text-decoration: none;
                 margin-left: 5vh;
 
                 @include for-tablet {
-                    margin-left: 1vh;
-                    
+                    margin-left: 3vh;
                 }
-                @include for-mobile{
-                    font-size: 14px;
+
+                @include for-mobile {
+                    margin-left: 1vh;
                 }
 
                 &:hover {

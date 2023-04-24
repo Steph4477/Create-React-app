@@ -11,64 +11,79 @@
 body {
   margin: 3%;
   background-color: $white;
-  @include for-tablet{
+
+  @include for-tablet {
     margin: 2%;
   }
-  
-  
+
+
 }
 
 h1 {
   font-size: 35px;
   margin: 0;
-  @include for-tablet{
+
+  @include for-tablet {
     font-size: 30px;
   }
-  @include for-mobile{
+
+  @include for-mobile {
     font-size: 25px;
   }
 }
 
 h2 {
-  font-size: 30px;
-  @include for-tablet{
+  font-size: 25px;
+
+  @include for-tablet {
     font-size: 20px;
   }
-  @include for-mobile{
+
+  @include for-mobile {
     font-size: 15px;
   }
 }
 
 h3 {
   font-size: 22px;
-  @include for-tablet{
+
+  @include for-tablet {
     font-size: 18px;
   }
-  @include for-mobile{
+
+  @include for-mobile {
     font-size: 16px;
   }
+}
+
+h4 {
+  font-size: 18px;
 }
 
 p {
   font-size: 18px;
   font-weight: 400;
-  @include for-tablet{
+
+  @include for-tablet {
     font-size: 16px;
   }
-  @include for-mobile{
+
+  @include for-mobile {
     font-size: 14px;
   }
-} 
+}
 
 address {
   font-size: 25px;
   font-style: normal;
   margin-top: 1vh;
   color: $pink;
-  @include for-tablet{
+
+  @include for-tablet {
     font-size: 20px;
   }
-  @include for-mobile{
+
+  @include for-mobile {
     font-size: 18px;
   }
 }
@@ -82,10 +97,13 @@ li {
   font-size: 18px;
   line-height: 4vh;
   list-style-type: none;
-  @include for-tablet{
+  color: $pink;
+
+  @include for-tablet {
     font-size: 16px;
   }
-  @include for-mobile{
+
+  @include for-mobile {
     font-size: 14px;
   }
 }

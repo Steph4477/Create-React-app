@@ -9,7 +9,7 @@ import Error from './pages/Error';
 import Footer from './components/Footer';
 
 export default function App() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([])
 
   useEffect(() => {  
     fetch('./logements.json')

@@ -20,16 +20,14 @@ export default function About() {
 
             <section className='about'>
                 {data.map(item => (
+                    
                     <div className='about_collapse' key={item.id}>
-
-
                         <Collapse title={item.title} content={item.content} />
-
-
                     </div>
+
                 ))}
             </section>
 
         </main>
-    );
+    )
 }

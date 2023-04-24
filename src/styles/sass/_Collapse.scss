@@ -2,7 +2,7 @@
   background-color: $grey;
   border-radius: 10px;
   font-weight: 400;
-  
+
   &_title {
     display: flex;
     justify-content: space-between;
@@ -10,16 +10,26 @@
     background-color: $pink;
     color: $white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
     cursor: pointer;
+
+    @include for-tablet {
+      padding: 12px;
+    }
+
+    @include for-mobile {
+      padding: 10px;
+    }
 
     .arrow {
       height: 15px;
-      @include for-tablet{
+
+      @include for-tablet {
         height: 10px;
         margin-left: 5px;
       }
-      @include for-mobile{
+
+      @include for-mobile {
         height: 8px;
         margin-left: 5px;
       }
@@ -47,4 +57,3 @@
     }
   }
 }
-

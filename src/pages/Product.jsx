@@ -31,29 +31,26 @@ export default function ProductCart({ data }) {
             <address className='container_identity_item_title_address'>{item.location}</address>
           </div>
 
-
           <Tags item={item} />
-
-
 
         </div>
 
         <div className='container_identity_profil'>
 
           <div className='container_identity_profil_name'>
+            
             <div className='container_identity_profil_name_N'>
-            {item.host.name.split(' ').map((name, index) => (
-              <div key={index}>  
-                {name}
-              </div>
-            ))}
+              {item.host.name.split(' ').map((name, index) => (
+                <div key={index}>
+                  {name}
+                </div>
+              ))}
             </div>
 
             <div className='container_identity_profil_name_I'>
               <img src={item.host.picture} alt={item.host.name} />
-
-
             </div>
+
           </div>
 
           <div className='container_identity_profil-rate'>
