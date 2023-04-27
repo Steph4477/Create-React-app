@@ -1,4 +1,4 @@
-import './styles/index.scss'
+import './styles/index.scss';
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import { Routes, Route } from 'react-router-dom';

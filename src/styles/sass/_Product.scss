@@ -137,11 +137,11 @@
                 }
 
                 img {
-                    width: 23px;
+                    width: 22px;
+                    margin-right: 5px;
 
                     @include for-tablet {
                         width: 22px;
-                        margin-right: 5px;
                     }
 
                     @include for-tablet {

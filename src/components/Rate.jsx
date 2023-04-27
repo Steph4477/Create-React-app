@@ -7,7 +7,7 @@ export default function Rate({ item }) {
 
     if (!item) {
         return (
-            navigate('/404')
+            navigate('./404')
         )
     }
     return (

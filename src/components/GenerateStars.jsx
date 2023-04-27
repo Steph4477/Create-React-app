@@ -1,5 +1,5 @@
-import starPink from '../assets/stars.svg'
-import starGray from '../assets/stars_empty.svg'
+import starPink from '../assets/Stars.svg'
+import starGray from '../assets/Stars_empty.svg'
 
 export default function GenerateStars(rating) {
   const stars = []

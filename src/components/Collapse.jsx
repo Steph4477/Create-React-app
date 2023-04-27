@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import arrow from '../assets/arrow.svg';
+import arrow from '../assets/Arrow.svg';
 
 export default function Collapse({ title, content }) {
   const [actif, setActif] = useState(false)

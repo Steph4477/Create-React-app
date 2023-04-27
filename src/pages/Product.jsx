@@ -1,18 +1,17 @@
-import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import Collapse from '../components/Collapse';
 import Tags from '../components/Tags';
 import Rate from '../components/Rate';
 import Carousel from '../components/Carousel';
+import Error from './Error';
 
 export default function ProductCart({ data }) {
-  const navigate = useNavigate()
   const { id } = useParams()
   const item = data.find((item) => item.id === id)
 
   if (!item) {
     return (
-      navigate('/404')
+      <Error />
     )
   }
 
