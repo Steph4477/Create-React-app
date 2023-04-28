@@ -1,9 +1,8 @@
-import { useNavigate } from 'react-router-dom';
+import Error from '../pages/Error';
 import arrow from '../assets/arrowCarousel.png';
 import { useState } from 'react';
 
 export default function Carousel({ item }) {
-    const navigate = useNavigate()
 
     const [index, setIndex] = useState(0)
 
@@ -21,7 +20,7 @@ export default function Carousel({ item }) {
 
     if (!item) {
         return (
-            navigate('/404')
+          <Error />
         )
     }
 

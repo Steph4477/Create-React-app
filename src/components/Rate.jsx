@@ -1,15 +1,15 @@
 import React from 'react';
 import GenerateStars from './GenerateStars';
-import { useNavigate } from 'react-router-dom';
+import Error from '../pages/Error';
 
 export default function Rate({ item }) {
-    const navigate = useNavigate()
-
+    
     if (!item) {
         return (
-            navigate('./404')
+          <Error />
         )
     }
+
     return (
         <div className='container-TR_rate'>
             {GenerateStars(item.rating)}

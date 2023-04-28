@@ -1,11 +1,10 @@
-import { useNavigate } from 'react-router-dom';
+import Error from '../pages/Error';
 
 export default function Tags({ item }) {
-    const navigate = useNavigate()
 
     if (!item) {
         return (
-            navigate('/404')
+          <Error />
         )
     }
 
