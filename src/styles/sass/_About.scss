@@ -3,9 +3,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15vh;
 
     &_collapse {
         width: 90%;
         margin-top: 5vh;
+        
     }
 }

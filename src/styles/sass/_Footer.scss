@@ -1,11 +1,11 @@
 .footer {
-    margin-top: 5vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: $black;
     height: 200px;
-    padding-bottom: 5vh;
+    margin: -4%;
+    padding-bottom: 2vh;
 
     &_item {
         display: flex;
