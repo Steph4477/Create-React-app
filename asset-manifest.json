@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/P7-Creez-une-application-web-avec-React/static/css/main.72327a61.css",
-    "main.js": "/P7-Creez-une-application-web-avec-React/static/js/main.2695229b.js",
-    "static/js/787.0ce615c0.chunk.js": "/P7-Creez-une-application-web-avec-React/static/js/787.0ce615c0.chunk.js",
-    "static/media/about.png": "/P7-Creez-une-application-web-avec-React/static/media/about.dc7a08e1faa2e14de0bd.png",
-    "static/media/banner.png": "/P7-Creez-une-application-web-avec-React/static/media/banner.1168be13650bb18b456e.png",
-    "static/media/no_pictures.png": "/P7-Creez-une-application-web-avec-React/static/media/no_pictures.ae437bc87b2fdf9461b6.png",
-    "static/media/logo.svg": "/P7-Creez-une-application-web-avec-React/static/media/logo.a6101328193bb3191cbcb50c120ec0d1.svg",
-    "static/media/Stars.svg": "/P7-Creez-une-application-web-avec-React/static/media/Stars.99823ead9e7b776a655840a5cd5984e5.svg",
-    "static/media/Stars_empty.svg": "/P7-Creez-une-application-web-avec-React/static/media/Stars_empty.68fd8a1ead5375bd59bb6ae0b633ffd3.svg",
-    "index.html": "/P7-Creez-une-application-web-avec-React/index.html",
-    "static/media/A.svg": "/P7-Creez-une-application-web-avec-React/static/media/A.512a49fbe3af61621733759cb5d1f973.svg",
-    "static/media/S.svg": "/P7-Creez-une-application-web-avec-React/static/media/S.eade8a5b669d941b0a241e837105d999.svg",
-    "static/media/Arrow.svg": "/P7-Creez-une-application-web-avec-React/static/media/Arrow.442c05052b4e778f922407af41506776.svg",
-    "static/media/house.svg": "/P7-Creez-une-application-web-avec-React/static/media/house.6510050b8b3f3ea8632b4971daf4d5af.svg",
-    "static/media/K.svg": "/P7-Creez-une-application-web-avec-React/static/media/K.d43f20af47d1a86e33a7fd3b9fe35b29.svg",
-    "main.72327a61.css.map": "/P7-Creez-une-application-web-avec-React/static/css/main.72327a61.css.map",
-    "main.2695229b.js.map": "/P7-Creez-une-application-web-avec-React/static/js/main.2695229b.js.map",
-    "787.0ce615c0.chunk.js.map": "/P7-Creez-une-application-web-avec-React/static/js/787.0ce615c0.chunk.js.map"
+    "main.css": "/kasa/static/css/main.72327a61.css",
+    "main.js": "/kasa/static/js/main.9e1392c3.js",
+    "static/js/787.0ce615c0.chunk.js": "/kasa/static/js/787.0ce615c0.chunk.js",
+    "static/media/about.png": "/kasa/static/media/about.dc7a08e1faa2e14de0bd.png",
+    "static/media/banner.png": "/kasa/static/media/banner.1168be13650bb18b456e.png",
+    "static/media/no_pictures.png": "/kasa/static/media/no_pictures.ae437bc87b2fdf9461b6.png",
+    "static/media/logo.svg": "/kasa/static/media/logo.a6101328193bb3191cbcb50c120ec0d1.svg",
+    "static/media/Stars.svg": "/kasa/static/media/Stars.99823ead9e7b776a655840a5cd5984e5.svg",
+    "static/media/Stars_empty.svg": "/kasa/static/media/Stars_empty.68fd8a1ead5375bd59bb6ae0b633ffd3.svg",
+    "static/media/A.svg": "/kasa/static/media/A.512a49fbe3af61621733759cb5d1f973.svg",
+    "static/media/S.svg": "/kasa/static/media/S.eade8a5b669d941b0a241e837105d999.svg",
+    "index.html": "/kasa/index.html",
+    "static/media/Arrow.svg": "/kasa/static/media/Arrow.442c05052b4e778f922407af41506776.svg",
+    "static/media/house.svg": "/kasa/static/media/house.6510050b8b3f3ea8632b4971daf4d5af.svg",
+    "static/media/K.svg": "/kasa/static/media/K.d43f20af47d1a86e33a7fd3b9fe35b29.svg",
+    "main.72327a61.css.map": "/kasa/static/css/main.72327a61.css.map",
+    "main.9e1392c3.js.map": "/kasa/static/js/main.9e1392c3.js.map",
+    "787.0ce615c0.chunk.js.map": "/kasa/static/js/787.0ce615c0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72327a61.css",
-    "static/js/main.2695229b.js"
+    "static/js/main.9e1392c3.js"
   ]
 }
