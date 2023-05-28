@@ -21,4 +21,4 @@ Contraintes pour la galerie d'images
 Pour le défilement des photos dans la galerie (composant Gallery) :
 
 Si l'utilisateur se trouve à la première image et qu'il clique sur "Image précédente", la galerie affiche la dernière.
-La plateforme web est maintenant prête à être utilisée pour faciliter la location d'appartements entre particuliers.
+La plateforme web est maintenant prête à être utilisée pour faciliter la location d'appartements entre particuliers.# kasa
